@@ -1,0 +1,38 @@
+
+// for loops 
+
+for(let i=1; i<=10; i++)
+{
+    console.log("iteration:",i);
+}
+
+/* output= iteration: 3
+iteration: 4
+iteration: 5
+iteration: 6
+iteration: 7
+iteration: 8
+iteration: 9
+iteration: 10  */
+
+
+
+// while loops 
+
+let a =1;
+while(a<=3)
+{
+    console.log("count:",a);
+    a++;
+}
+
+
+//  do while loops 
+
+let d=0;
+do 
+{
+    console.log("Number is a :",d);
+    d++;
+}
+while(d<=5);
