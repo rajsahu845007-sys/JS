@@ -85,26 +85,41 @@ cat1.sound(); // meow meow
 
 
 // Encapsulation 
+class details{
+  #name;
+  #address;
+  constructor(name,address,mobile,aadhar){
+   this.#name=name;
+   this.#address=address;
+   this.mobile=mobile;
+   this.aadhar=aadhar;
+  }
+  get(){
+    return `${this.#name},${this.#address}`;
+  }
+set(a,b){
+   this.#name=a;
+   this.#address=b;
+}
+}
 
-class dinesh{
-    #Firstname; // private / Encapsulation
-    #address;
-
- constructor(Firstname,address,age){
-    this.#Firstname=Firstname;
-    this.#address=address;
-    this.age=age; 
-
- }
-
-getdinesh(){
-     return this.Firstname=this.#Firstname}}
-
-let sahu=new dinesh("raj","doma","21");
-
-console.log(sahu.getdinesh()); // dinesh { age: '21' }
+const person=new details("dinesh","chhapora","8450075241","814366398810");
+console.log(person);            
+console.log(person.get()); 
+ person.set("rajkumar","Malkharoda");
+console.log(person.get()); 
 
 
 
+// Abstraction 
 
+       n           
 
+class class2 extends car{
+  constructor(n,n1){
+      super(n,n1)
+      this.address=n1;
+  }
+} 
+const r=new class2("nsti","howrah");
+console.log(r);         

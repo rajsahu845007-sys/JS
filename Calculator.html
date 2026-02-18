@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="flower.avif">
+<script>
+
+function raj(val)
+{
+document.getElementById("result").value +=val;
+}
+
+function clr()
+{
+document.getElementById("result").value =" ";
+}
+
+function solve()
+{
+ var x=document.getElementById("result").value;
+ var y=eval(x);
+ document.getElementById("result").value=y;
+}
+
+
+</script>
+
+     <H1> <B>  <CENTER> <FONT COLOR="GREEN"> calculator  </FONT> </CENTER> </B>  </H1>
+ <!--create table-->
+  <center> <table id="calcu"> </center>
+    <table border="5" bgcolor="grey">
+        <tr>
+            <td colspan="3"> <input type="text" id="result">
+                </td>
+                <td> <input type="button" value="AC" onclick="clr()"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="1" onclick="raj(1)"> </td>
+                    <td> <input type="button" value="2" onclick="raj(2)"> </td>
+                    <td> <input type="button" value="3" onclick="raj(3)"> </td>
+                    <td> <input type="button" value="/" onclick="raj('/')"> </td>
+                    </tr>
+                     <tr>
+                    <td> <input type="button" value="4" onclick="raj(4)"> </td>
+                    <td> <input type="button" value="5" onclick="raj(5)"> </td>
+                    <td> <input type="button" value="6" onclick="raj(6)"> </td>
+                    <td> <input type="button" value="" onclick="raj('*')"> </td>
+                    </tr>
+                     <tr>
+                    <td> <input type="button" value="7" onclick="raj(7)"> </td>
+                    <td> <input type="button" value="8" onclick="raj(8)"> </td>
+                    <td> <input type="button" value="9" onclick="raj(9)"> </td>
+                    <td> <input type="button" value="-" onclick="raj('-')"> </td>
+                    </tr>
+                     <tr>
+                    <td> <input type="button" value="0" onclick="raj(0)"> </td>
+                    <td> <input type="button" value="00" onclick="raj('00')"> </td>
+                    <td> <input type="button" value="+" onclick="raj('+')"> </td>
+                    <td> <input type="button" value="=" onclick="solve()"> </td>
+                    </tr>
+
+</table>
+</body>
+</html>

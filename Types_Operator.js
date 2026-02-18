@@ -20,4 +20,4 @@ console.log(typeof c);
 
 let d=null;
 console.log(typeof d);
-// object 
+// object                   
