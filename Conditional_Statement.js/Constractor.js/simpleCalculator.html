@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title> MY FIRST CALCULATOR </title> </head>
+        <body>  
+ <center> <h1>  CALCULATOR </h1>  </center> 
+ <center> <table border="5"> </center> 
+    <tr> <td>
+   num1 <input id="num1"> <br>
+   num2 <input id="num2"> <br>
+   operator <input id="operator"> 
+   <button onclick="Calculator()"> SUBMIT </button>
+   <p id="result"> result </p>
+   <script> 
+      function Calculator(){
+        let x=parseInt(document.getElementById("num1").value);
+        let y=parseInt(document.getElementById("num2").value);
+        let operator=document.getElementById("operator").value;
+        let result=" ";
+      
+        switch(operator){
+            case"+":
+            result=x+y;
+            break;
+
+            case"-":
+            result=x-y;
+            break;
+
+            case"*":
+            result=x*y;
+            break;
+
+            case"/":           
+            result=x/y;
+            break;
+
+
+            default:
+            result="Please Provide operator"; 
+                    
+             }
+
+ document.getElementById("result").
+             innerHTML=result;
+
+            }
+</script>
+
+</tr> </td>
+</table>
+</body>
+</html>
