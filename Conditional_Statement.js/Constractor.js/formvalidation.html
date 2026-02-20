@@ -1,0 +1,74 @@
+<html>
+<head>
+<title> form validation </title>  
+<style>
+label{
+    width:100px;
+    display:inline-block;
+}
+input{
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+   <center> <h1> REGISTRATION FORM </h1> </center>
+    <center> <table border="5"> </center>
+    <tr> <td>
+    <form onsubmit="return validation()">
+    <label> FIRST NAME:- </label> <input type="text" id="name"> <br>
+    <label>  MIDDLE NAME:- </label> <input type="text" id="middle"> <br>
+    <label> LAST NAME:- </label> <input type="text" id="last"> <br>
+    <label> DOB:- </label> <input type="text" id="dob"> <br>
+    <label> FATHER'S NAME:- </label> <input type="text" id="fathers"> <br>
+    <label> MOTHER'S NAME:- </label> <input type="text" id="mothers"> <br>
+    <label> VILLAGE:- </label> <input type="text" id="village"> <br>
+    <label> POST OFFICE:- </label> <input type="text" id="post"> <br>
+    <label> BLOCK:- </label> <input type="text" id="block"> <br>
+    <label> DISTRICT:- </label> <input type="text" id="district"> <br>
+    <label> STATE:- </label> <input type="text" id="state"> <br>
+    <label> PIN CODE:- </label> <input type="text" id="pin"> <br>
+    <label> MOBILE:- </label> <input type="text" id="mobile"> <br>
+    <label> Email ID:- </label> <input type="text" id="email"> <br>
+     <center> <input type="submit" value="submit">  </center><br>
+    </form>
+    <script>
+        function validation(){
+
+            var name=document.getElementById("name").value;
+            var middle=document.getElementById("middle").value;
+            var last=document.getElementById("last").value;
+            var dob=document.getElementById("dob").value;
+            var fathers=document.getElementById("fathers").value;
+            var mothers=document.getElementById("mothers").value;
+            var village=document.getElementById("village").value;
+            var post=document.getElementById("post").value;
+            var block=document.getElementById("block").value;
+            var district=document.getElementById("district").value;
+            var state=document.getElementById("state").value;
+            var pin=document.getElementById("pin").value;
+            var mobile=document.getElementById("mobile").value;
+            var email=document.getElementById("email").value;
+        
+        if(name==""){
+            alert("please enter your name");
+             return false;
+        }
+
+         if(email=="" ||!email.includes("@") || !email.includes(".")){
+            alert("please enter valid EMAIL");
+             return false;
+        }
+       
+        if(mobile.length !=10 || isNaN(mobile)){
+            alert("please enter your valid 10-digit mobile");
+             return false;
+            }
+            alert ("form submitted successfully");
+            return true;
+        }
+    </script>
+    </table>
+</tr> </td>
+</body>
+</html>
