@@ -1,0 +1,144 @@
+<html>
+<head>
+<title> form validation </title>  
+<style>
+label{
+    width:150px;
+    display:inline-block;
+}
+input{
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+ 
+    <center> <table border="5"> </center>
+    <tr> <td>
+    <form onsubmit="return validation()">
+         <center> <h1> REGISTRATION FORM </h1> </center>
+    <label> FIRST NAME:- </label> <input type="text" id="name"> <br>
+    <label>  MIDDLE NAME:- </label> <input type="text" id="middle"> <br>
+    <label> LAST NAME:- </label> <input type="text" id="last"> <br>
+    <label> DOB:- </label> <input type="text" id="dob"> <br>
+    <label> FATHER'S NAME:- </label> <input type="text" id="fathers"> <br>
+    <label> MOTHER'S NAME:- </label> <input type="text" id="mothers"> <br>
+    <label> VILLAGE:- </label> <input type="text" id="village"> <br>
+    <label> POST OFFICE:- </label> <input type="text" id="post"> <br>
+    <label> BLOCK:- </label> <input type="text" id="block"> <br>
+    <label> DISTRICT:- </label> <input type="text" id="district"> <br>
+    <label> STATE:- </label> <input type="text" id="state"> <br>
+    <label> PIN CODE:- </label> <input type="text" id="pin"> <br>
+    <label> Email ID:- </label> <input type="text" id="email"> <br>
+    <label> MOBILE:- </label> <input type="text" id="mobile"> <br>
+  
+    <label> PASSWORD:- </label> <input type="password" id="password"> <br> <br>
+    <label> CONFIRM PASSWORD:- </label> <input type="password" id="password1"> <br>
+
+    <label> PHOTO:- </label> <input type="file" name="photo" size="" id="photo"> <br>
+    <label> SIGNATURE:- </label> <input type="file" name="signature" size="" id="signature"> <br> <br>
+    <center> <input type="submit" value="submit">  </center>
+    </form> 
+    <script>
+        function validation(){
+
+            var name=document.getElementById("name").value;
+            var middle=document.getElementById("middle").value;
+            var last=document.getElementById("last").value;
+            var dob=document.getElementById("dob").value;
+            var fathers=document.getElementById("fathers").value;
+            var mothers=document.getElementById("mothers").value;
+            var village=document.getElementById("village").value;
+            var post=document.getElementById("post").value;
+            var block=document.getElementById("block").value;
+            var district=document.getElementById("district").value;
+            var state=document.getElementById("state").value;
+            var pin=document.getElementById("pin").value;
+            var email=document.getElementById("email").value;
+            var mobile=document.getElementById("mobile").value;
+            var password=document.getElementById("password").value;
+            var password1=document.getElementById("password1").value;
+           var photo=document.getElementById("photo").value;
+           var signature=document.getElementById("signature").value;
+        if(name==""){
+            alert("please enter your name");
+             return false;
+        }
+   if(middle==""){
+            alert("please enter your middle name");
+             return false;
+        }
+   if(last==""){
+            alert("please enter your Last name");
+             return false;
+        }
+   if( dob==""){
+            alert("please enter your Date of Birth");
+             return false;
+        }
+   if( fathers==""){
+            alert("please enter your fathers Name");
+             return false;
+        }
+   if( mothers==""){
+            alert("please enter your mothers Name");
+             return false;
+        }
+   if(village==""){
+            alert("please enter your village");
+             return false;
+        }
+if(post==""){
+            alert("please enter your Post Office");
+             return false;
+        }
+if(block==""){
+            alert("please enter your Block");
+             return false;
+        }
+if(district==""){
+            alert("please enter your District");
+             return false;
+        }
+if(district==""){
+            alert("please enter your District");
+             return false;
+        }
+if(state==""){
+            alert("please enter your State");
+             return false;
+        }
+if(pin==""){
+            alert("please enter your pin code");
+             return false;
+        }
+
+ if(email=="" ||!email.includes("@") || !email.includes(".")){
+            alert("please enter valid Email ID");
+             return false;
+        }
+
+  if(mobile.length !=10 || isNaN(mobile)){
+            alert("please enter your valid 10-digit mobile");
+             return false;
+            }
+
+    if(password!=password1){
+
+       alert("please enter same password")
+      }
+if(photo==""){
+            alert("please upload your photo");
+             return false;
+        }
+if(signature==""){
+            alert("please upload your Signature");
+             return false;
+        }
+       alert ("form submitted successfully");
+            return true;
+        }
+    </script>
+</tr> </td>
+</body>
+</html>
